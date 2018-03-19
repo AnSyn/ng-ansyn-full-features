@@ -8,7 +8,11 @@
       "root": "src",
       "outDir": "dist",
       "assets": [
-        "assets",
+        {
+          "glob": "**/*",
+          "input": "../node_modules/ng-ansyn/assets",
+          "output": "./assets"
+        },
         "favicon.ico"
       ],
       "index": "index.html",
