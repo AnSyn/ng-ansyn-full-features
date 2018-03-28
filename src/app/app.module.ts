@@ -7,9 +7,16 @@ import {HttpClientModule} from "@angular/common/http";
 import {CommonModule} from "@angular/common";
 import {AnsynBuilder} from 'ng-ansyn/src/appBuilder/ansyn-builder'
 import {RouterModule} from "@angular/router";
-
+import {AnsynModule} from "ng-ansyn";
 
 const ansynBuilder = new AnsynBuilder();
+appConfig.coreConfig.windowLayout = {
+  "menu": false,
+  "statusBar": false,
+  "timeLine": true,
+  "contextSun": false,
+  "toolsOverMenu": true
+}
 const providers = ansynBuilder.getProvidersFromObject(appConfig);
 const ansynDynamicModule = ansynBuilder.buildModule(providers, true, true);
 

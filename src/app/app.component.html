@@ -1,8 +1,10 @@
-<h1>
+<div>
   {{title}}
-</h1>
+  <button (click)="changeLayout()">change map layout</button>
+  <button (click)="changeWindowsLayout()">change windows layout</button>
+  <button (click)="setLayouts()">set layouts</button>
+</div>
 <div id="ansynMap">
-<ansyn-app></ansyn-app>
-
+<ansyn-app ></ansyn-app>
 </div>
 
